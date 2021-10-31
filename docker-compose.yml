@@ -14,3 +14,13 @@ services:
     command: php -S 0.0.0.0:8080 -t ./public
     environment:
       PHP_IDE_CONFIG: "serverName=Docker"
+
+  fake_server:
+    volumes:
+      - ./fakeserver:/fakeserver
+    image: node:latest
+    container_name: fake_server
+    working_dir: /fakeserver
+    ports:
+      - 3000:3000
+    command: sh -c "npm install -g json-server && json-server --host 0.0.0.0 --watch db.json"
