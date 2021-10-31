@@ -1,9 +1,7 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "bonuscards": [
+    { "number": "4564654asdasdasd4654654", "balance": 500 },
+    { "number": "123", "balance": 500 },
+    { "number": "234", "balance": 500 }
+  ]
 }
