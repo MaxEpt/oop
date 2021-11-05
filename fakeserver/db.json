@@ -1,7 +1,10 @@
 {
-  "bonuscards": [
-    { "number": "4564654asdasdasd4654654", "balance": 500 },
-    { "number": "123", "balance": 500 },
-    { "number": "234", "balance": 500 }
-  ]
+  "discountData": {
+    "bonusCard": { "number": "4564654asdasdasd4654654", "balance": 500 },
+    "personalPromoCodes": [
+      {"id": "superpromocode1", "displayValue": "superpromocode1", "description": "111"},
+      {"id": "asdasd45646-asdasd4444", "displayValue": "superpromocode2", "description": ""},
+      {"id": "asdasd45646-asdasd4444", "displayValue": "superpromocode3", "description": "3"}
+    ]
+  }
 }
