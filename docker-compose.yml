@@ -11,7 +11,7 @@ services:
     working_dir: /app
     ports:
       - 8080:8080
-    command: php -S 0.0.0.0:8080 -t ./public
+    command: bash -c "composer install && php -S 0.0.0.0:8080 -t ./public"
     environment:
       PHP_IDE_CONFIG: "serverName=Docker"
 
@@ -23,4 +23,4 @@ services:
     working_dir: /fakeserver
     ports:
       - 3000:3000
-    command: sh -c "npm install -g json-server && json-server --host 0.0.0.0 --watch db.json"
+    command: bash -c "npm install -g json-server && json-server --host 0.0.0.0 --watch db.json"
