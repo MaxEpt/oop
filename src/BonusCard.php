@@ -10,7 +10,7 @@ final class BonusCard
 
     public function __construct(string $number, int $balance)
     {
-        if (empty($number) || $balance < 0) {
+        if ($balance < 0) {
             throw new \InvalidArgumentException();
         }
 
